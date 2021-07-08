@@ -6,6 +6,7 @@ function SCREAMCASE(obj){
 	for(let key of Object.keys(obj)) {
 		obj[SCREAM(key)] = obj[key];
 	};
+	return obj;
 };
 
 SCREAMCASE(globalThis)
