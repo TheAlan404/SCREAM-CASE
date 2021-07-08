@@ -9,7 +9,7 @@ function SCREAMCASE(obj){
 };
 
 SCREAMCASE(globalThis)
-globalThis.MATH = SCREAMCASE(MATH)
+globalThis.MATH = SCREAMCASE(Math)
 globalThis.PROCESS = SCREAMCASE(process)
 globalThis.REQUIRE = (p) => {
 	return require(p.toLowerCase()); // :(
