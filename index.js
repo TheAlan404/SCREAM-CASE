@@ -15,7 +15,7 @@ globalThis.REQUIRE = (p) => {
 	return require(p.toLowerCase()); // :(
 };
 
-let val = {
+let VAL = {
 	Object,
 	Array,
 	String,
@@ -25,9 +25,9 @@ let val = {
 };
 
 for(let NAME in VAL){
-	globalThis[SCREAM(NAME)] = VAL;
-	SCREAMCASE(VAL)
-	if(VAL.prototype) SCREAMCASE(VAL.prototype);
+	globalThis[SCREAM(NAME)] = VAL[NAME];
+	SCREAMCASE(VAL[NAME])
+	if(VAL[NAME].prototype) SCREAMCASE(VAL[NAME].prototype);
 };
 
 
